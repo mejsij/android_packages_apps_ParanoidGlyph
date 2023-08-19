@@ -130,7 +130,7 @@ public final class AnimationManager {
                     FileUtils.writeSingleLed(i, Constants.getBrightness());
                     Thread.sleep(10);
                 }
-                Thread.sleep(10000);
+                Thread.sleep(1000);
                 for (int i = batteryArray.length - 1; i >= 0; i--) {
                     if (StatusManager.isCallLedEnabled() || StatusManager.isAllLedActive()) throw new InterruptedException();
                     FileUtils.writeSingleLed(batteryArray[i], 0);
